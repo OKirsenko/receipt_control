@@ -6,14 +6,19 @@ const formEl = document.querySelector('.form');
 const limitEl = document.querySelector('.limit');
 const spendEl = document.querySelector('.spend');
 const remainsEl = document.querySelector('.remains');
+const audio = document.getElementById('audio');
+console.log(audio);
 
 formEl.addEventListener('submit', onFormSubmit);
 list.addEventListener('click', onListClick);
 function onFormSubmit(e) {
   e.preventDefault();
   const name = e.currentTarget.elements.name.value;
-  const amount = e.currentTarget.elements.amount.value;
+  const amount = +e.currentTarget.elements.amount.value;
   const date = getDate();
+  if (amount >= 10) {
+    audio.play();
+  }
   postReceipt(name, amount, date);
   e.currentTarget.reset();
 }
@@ -43,7 +48,7 @@ async function getReceipt(url) {
 
 function markupData(res) {
   const data = res.data;
-  console.log(data);
+
   if (data.length === 0) {
     console.log('There is nothing in the list');
   }
@@ -59,13 +64,11 @@ function markupData(res) {
 function onListClick(e) {
   if (!e.target.classList.contains('delete_btn')) return;
   const itemId = e.target.parentNode.id;
-  console.log(e.target.parentNode.id);
-  console.log('ola');
+
   deleteReceipt(itemId);
 }
 
 async function deleteReceipt(id) {
-  console.log(typeof id);
   try {
     const del = await axios.delete(`${baseUrl}/${id}`);
     getReceipt(baseUrl);
@@ -78,11 +81,11 @@ function countStat(res) {
   const data = res.data;
 
   const amounts = data.map(item => +item.amount);
-  console.log(amounts);
+
   const total = amounts.reduce(function (sum, elem) {
     return sum + elem;
   }, 0);
-  console.log(total);
+
   limitEl.innerHTML = 150;
   spendEl.innerHTML = total;
   remainsEl.innerHTML = +limitEl.textContent - total;
