@@ -50,7 +50,7 @@ function markupData(res) {
   const markup = data
     .map(
       item =>
-        `<li id='${item.id}' class='receipt_item'><p>${item.name}</p><p>${item.amount}</p><p>${item.date}</p><button class='delete_btn'>Ой, бля</button></li>`
+        `<li id='${item.id}' class='receipt_item'><p class='rec_name'>${item.name}</p><p class='rec_amount'>${item.amount}</p><p class='rec_date'>${item.date}</p><button class='delete_btn'>Ой, бля</button></li>`
     )
     .join('');
   list.innerHTML = markup;
