@@ -89,7 +89,7 @@ button {
         margin-top: 10px;
     }
     .form_btn {
-        width: 120px;
+        min-width: 120px;
         height: 50px;
         border: none;
         border-radius: 40px;
@@ -152,7 +152,7 @@ button {
     }
     .delete_btn {
         margin-left: auto;
-        width: 70px;
+        min-width: 70px;
             height: 30px;
             border: none;
             border-radius: 10px;
