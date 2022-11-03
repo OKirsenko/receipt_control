@@ -1,13 +1,12 @@
 const axios = require('axios').default;
-const baseUrl = 'https://6362a4b537f2167d6f69cb2a.mockapi.io/reciept';
-
+const baseUrl = 'https://6362a4b537f2167d6f69cb2a.mockapi.io/';
+let query = 'reciept';
 const list = document.querySelector('.receipts_list');
 const formEl = document.querySelector('.form');
 const limitEl = document.querySelector('.limit');
 const spendEl = document.querySelector('.spend');
 const remainsEl = document.querySelector('.remains');
 const audio = document.getElementById('audio');
-console.log(audio);
 
 formEl.addEventListener('submit', onFormSubmit);
 list.addEventListener('click', onListClick);
@@ -29,7 +28,7 @@ function getDate() {
 
 async function postReceipt(name, amount, date) {
   try {
-    const id = await axios.post(baseUrl, { name, amount, date });
+    const id = await axios.post(`${baseUrl}${query}`, { name, amount, date });
     getReceipt(baseUrl);
   } catch (error) {
     console.error(error);
@@ -38,7 +37,7 @@ async function postReceipt(name, amount, date) {
 
 async function getReceipt(url) {
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(`${url}${query}`);
     markupData(response);
     countStat(response);
   } catch (error) {
@@ -52,7 +51,10 @@ function markupData(res) {
   if (data.length === 0) {
     console.log('There is nothing in the list');
   }
-  const markup = data
+  console.log(data);
+  const reverseData = data.reverse();
+
+  const markup = reverseData
     .map(
       item =>
         `<li id='${item.id}' class='receipt_item'><p class='rec_name'>${item.name}</p><p class='rec_amount'>${item.amount}</p><p class='rec_date'>${item.date}</p><button class='delete_btn'>Ой, бля</button></li>`
@@ -63,14 +65,16 @@ function markupData(res) {
 
 function onListClick(e) {
   if (!e.target.classList.contains('delete_btn')) return;
-  const itemId = e.target.parentNode.id;
+  const listItem = e.target.parentNode;
+  const itemId = listItem.id;
+  listItem.classList.add('receipt_item_anim');
 
   deleteReceipt(itemId);
 }
 
 async function deleteReceipt(id) {
   try {
-    const del = await axios.delete(`${baseUrl}/${id}`);
+    const del = await axios.delete(`${baseUrl}${query}/${id}`);
     getReceipt(baseUrl);
   } catch (error) {
     console.error(error);
@@ -87,7 +91,7 @@ function countStat(res) {
   }, 0);
 
   limitEl.innerHTML = 150;
-  spendEl.innerHTML = total;
-  remainsEl.innerHTML = +limitEl.textContent - total;
+  spendEl.innerHTML = total.toFixed(2);
+  remainsEl.innerHTML = +limitEl.textContent - total.toFixed(2);
 }
 getReceipt(baseUrl);

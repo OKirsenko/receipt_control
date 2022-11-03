@@ -1,0 +1,17 @@
+.marks_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bookmark_btn {
+    min-width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: rgb(226, 226, 226);
+    font-size: 18px;
+}
+.bookmark_btn_active {
+    color: #000;
+    border-bottom: 2px solid black;
+}
