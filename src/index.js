@@ -51,7 +51,7 @@ function markupData(res) {
   if (data.length === 0) {
     console.log('There is nothing in the list');
   }
-  console.log(data);
+
   const reverseData = data.reverse();
 
   const markup = reverseData
@@ -95,3 +95,49 @@ function countStat(res) {
   remainsEl.innerHTML = +limitEl.textContent - total.toFixed(2);
 }
 getReceipt(baseUrl);
+
+// ///////////////////////////////////////////////////////////////////////////////
+// BOOKMARKS
+
+const bookmarks = document.querySelector('.marks_wrap');
+const receiptSection = document.querySelector('.receipts-section');
+const shopingListSection = document.querySelector('.shoping-list_section');
+const statSection = document.querySelector('.stat-section');
+bookmarks.addEventListener('click', onBookmarksClick);
+
+function onBookmarksClick(e) {
+  if (e.target.nodeName !== 'BUTTON') return;
+  if (e.target.classList.contains('bookmark_btn_active')) return;
+  const arr = Array.from(e.currentTarget.children);
+  const targetId = e.target.id;
+  arr.forEach(el => {
+    if (!el.classList.contains('bookmark_btn_active')) return;
+    el.classList.remove('bookmark_btn_active');
+  });
+  console.log(e.target.id);
+  arr.forEach(el => {
+    if (el.id === targetId) {
+      el.classList.add('bookmark_btn_active');
+    }
+  });
+  switch (targetId) {
+    case 'receipt':
+      receiptSection.classList.remove('hidden_section');
+      shopingListSection.classList.add('hidden_section');
+      statSection.classList.add('hidden_section');
+      break;
+    case 'shoping':
+      receiptSection.classList.add('hidden_section');
+      shopingListSection.classList.remove('hidden_section');
+      statSection.classList.add('hidden_section');
+      break;
+    case 'stat':
+      receiptSection.classList.add('hidden_section');
+      shopingListSection.classList.add('hidden_section');
+      statSection.classList.remove('hidden_section');
+      break;
+
+    default:
+      break;
+  }
+}
