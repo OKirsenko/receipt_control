@@ -114,7 +114,7 @@ function onBookmarksClick(e) {
     if (!el.classList.contains('bookmark_btn_active')) return;
     el.classList.remove('bookmark_btn_active');
   });
-  console.log(e.target.id);
+
   arr.forEach(el => {
     if (el.id === targetId) {
       el.classList.add('bookmark_btn_active');
@@ -130,6 +130,7 @@ function onBookmarksClick(e) {
       receiptSection.classList.add('hidden_section');
       shopingListSection.classList.remove('hidden_section');
       statSection.classList.add('hidden_section');
+      getShopinglist(baseUrl);
       break;
     case 'stat':
       receiptSection.classList.add('hidden_section');
@@ -139,5 +140,119 @@ function onBookmarksClick(e) {
 
     default:
       break;
+  }
+}
+
+////////////////////////////////////// SHOPING LIST
+////////////////////////////////////////
+
+const shopingListEl = document.querySelector('.shoping_list');
+const shopingFormEl = document.querySelector('.shoping_form');
+
+shopingFormEl.addEventListener('submit', onShopingFormSubmit);
+shopingListEl.addEventListener('click', onShopingListClick);
+shopingListEl.addEventListener('click', onDeleteShopingClick);
+
+async function getShopinglist(url) {
+  query = 'shoping';
+  try {
+    const response = await axios.get(`${url}${query}`);
+    markupShoping(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function markupShoping(res) {
+  const data = res.data;
+  console.log('data', data);
+  const doneProduct = data.filter(item => item.done === true);
+  const undoneProduct = data.filter(item => item.done === false);
+  console.log('done', doneProduct);
+  const markup =
+    undoneProduct
+      .reverse()
+      .map(
+        item => `<li class="shoping_item" id='s${item.id}' data-done='${item.done}'>
+        <p class="item_product">${item.product}</p>
+        <div class="check " ></div>
+        <p class="item_date">${item.date}</p>
+        <button class="item_delete_btn">X</button>
+      </li>`
+      )
+      .join('') +
+    doneProduct
+      .reverse()
+      .map(
+        item => `<li class="shoping_item" id='s${item.id}' data-done='${item.done}'>
+        <p class="item_product">${item.product}</p>
+        <div class="check check_done" ></div>
+        <p class="item_date">${item.date}</p>
+        <button class="item_delete_btn">X</button>
+      </li>`
+      )
+      .join('');
+  shopingListEl.innerHTML = markup;
+}
+
+let done = false;
+
+function onShopingFormSubmit(e) {
+  e.preventDefault();
+  const product = e.currentTarget.elements.product.value;
+  const date = getDate().slice(5, 11);
+
+  postShopingItem(product, date, done);
+  e.currentTarget.reset();
+}
+
+async function postShopingItem(product, date, done) {
+  query = 'shoping';
+  try {
+    await axios.post(`${baseUrl}${query}`, { product, date, done });
+    getShopinglist(baseUrl);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function onShopingListClick(e) {
+  if (!e.target.classList.contains('check')) return;
+  const shopingItem = e.target.parentNode;
+  const shopingItemId = shopingItem.id;
+
+  if (shopingItem.dataset.done === 'true') {
+    done = false;
+  } else {
+    done = true;
+  }
+  e.target.classList.toggle('check_done');
+  changeDone(shopingItemId, done);
+}
+
+async function changeDone(id, done) {
+  query = 'shoping';
+  try {
+    await axios.put(`${baseUrl}${query}/${id.slice(1)}`, { done });
+    getShopinglist(baseUrl);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function onDeleteShopingClick(e) {
+  if (!e.target.classList.contains('item_delete_btn')) return;
+  const itemId = e.target.parentNode.id.slice(1);
+  e.target.parentNode.classList.add('shoping_item_anim');
+  deleteShopingItem(itemId);
+}
+
+async function deleteShopingItem(id) {
+  query = 'shoping';
+  try {
+    const del = await axios.delete(`${baseUrl}${query}/${id}`);
+    getShopinglist(baseUrl);
+  } catch (error) {
+    console.error(error);
   }
 }

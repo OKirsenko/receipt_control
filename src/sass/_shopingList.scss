@@ -7,11 +7,14 @@
         align-items: flex-start;
         background-color: rgba(255, 255, 255, 0.226);
         border-radius: 10px;
-        padding: 20px 30px 20px 10px;
+        padding: 20px 40px 20px 10px;
         margin-bottom: 20px;
         position: relative;
         right: 0;
-        transition: 0.3s linear;
+        transition: right 0.3s linear;
+    }
+    .shoping_item_anim {
+        right: 400px;
     }
 .item_product {
     width: 60%;
@@ -25,6 +28,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.check_done {
+    
+    content: url('../images/check.png');
+}
 .item_delete_btn {
     position: absolute;
     top: 2px;
@@ -36,4 +44,27 @@
     border: none;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.233);
+}
+
+.shoping_form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.shoping_input {
+    width: calc(100% - 80px);
+    height: 40px;
+    margin: 0;
+    border-radius: 100px 0px 0px 100px;
+    box-shadow: none;
+}
+.shoping_form_btn {
+    width: 80px;
+    height: 40px;
+    margin: 0;
+    border-radius: 0px 100px 100px 0px;
+    border: none;
+    background-color: #fff;
+    
 }
