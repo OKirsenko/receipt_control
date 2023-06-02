@@ -90,7 +90,7 @@ function countStat(res) {
     return sum + elem;
   }, 0);
 
-  limitEl.innerHTML = 200;
+  limitEl.innerHTML = 400;
   spendEl.innerHTML = total.toFixed(2);
   remainsEl.innerHTML = +limitEl.textContent - total.toFixed(2);
 }
