@@ -1,0 +1,224 @@
+[
+ {
+  "date": "Fri, 31 Mar 2023 10:22:03 GMT",
+  "name": "Віка",
+  "amount": 9.8,
+  "id": "1"
+ },
+ {
+  "date": "Fri, 31 Mar 2023 10:22:33 GMT",
+  "name": "Віка",
+  "amount": 3,
+  "id": "2"
+ },
+ {
+  "date": "Sat, 01 Apr 2023 23:46:09 GMT",
+  "name": "Vika",
+  "amount": 3.6,
+  "id": "3"
+ },
+ {
+  "date": "Sun, 02 Apr 2023 17:01:52 GMT",
+  "name": "Саша",
+  "amount": 13.86,
+  "id": "4"
+ },
+ {
+  "date": "Tue, 11 Apr 2023 12:35:37 GMT",
+  "name": "Юля - food warehouse ",
+  "amount": 20.7,
+  "id": "5"
+ },
+ {
+  "date": "Tue, 11 Apr 2023 12:38:44 GMT",
+  "name": "Юля",
+  "amount": 3.3,
+  "id": "6"
+ },
+ {
+  "date": "Tue, 11 Apr 2023 12:42:25 GMT",
+  "name": "Юля - закупи",
+  "amount": 113.5,
+  "id": "7"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 18:51:03 GMT",
+  "name": "Саша",
+  "amount": 6.41,
+  "id": "8"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 18:51:16 GMT",
+  "name": "Саша",
+  "amount": 7.96,
+  "id": "9"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 18:52:27 GMT",
+  "name": "Vika",
+  "amount": 61,
+  "id": "10"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 18:54:08 GMT",
+  "name": "Vika",
+  "amount": 5.2,
+  "id": "11"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 18:59:05 GMT",
+  "name": " Vija",
+  "amount": 7.26,
+  "id": "12"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 18:59:24 GMT",
+  "name": "Vika",
+  "amount": 3.49,
+  "id": "13"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 18:59:43 GMT",
+  "name": "Vika",
+  "amount": 2.5,
+  "id": "14"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 19:00:15 GMT",
+  "name": "Vika",
+  "amount": 1.5,
+  "id": "15"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 19:01:38 GMT",
+  "name": "Vika",
+  "amount": 1.86,
+  "id": "16"
+ },
+ {
+  "date": "Wed, 12 Apr 2023 19:13:14 GMT",
+  "name": "Vika",
+  "amount": 1.86,
+  "id": "17"
+ },
+ {
+  "date": "Fri, 14 Apr 2023 14:43:47 GMT",
+  "name": "Віка",
+  "amount": 20.14,
+  "id": "18"
+ },
+ {
+  "date": "Sat, 15 Apr 2023 18:26:10 GMT",
+  "name": "Саша",
+  "amount": 7.3,
+  "id": "19"
+ },
+ {
+  "date": "Sun, 16 Apr 2023 11:38:15 GMT",
+  "name": "Віка",
+  "amount": 4.55,
+  "id": "20"
+ },
+ {
+  "date": "Tue, 18 Apr 2023 20:12:03 GMT",
+  "name": "Віка",
+  "amount": 3,
+  "id": "21"
+ },
+ {
+  "date": "Mon, 24 Apr 2023 10:42:18 GMT",
+  "name": "Віка",
+  "amount": 1.7,
+  "id": "22"
+ },
+ {
+  "date": "Mon, 24 Apr 2023 10:42:24 GMT",
+  "name": "Віка",
+  "amount": 1.5,
+  "id": "23"
+ },
+ {
+  "date": "Mon, 24 Apr 2023 10:44:37 GMT",
+  "name": "Віка(тарелки)",
+  "amount": 25,
+  "id": "24"
+ },
+ {
+  "date": "Tue, 25 Apr 2023 19:40:39 GMT",
+  "name": "Саша",
+  "amount": 17.5,
+  "id": "25"
+ },
+ {
+  "date": "Wed, 26 Apr 2023 15:23:51 GMT",
+  "name": "Юля",
+  "amount": 3,
+  "id": "26"
+ },
+ {
+  "date": "Wed, 26 Apr 2023 15:24:14 GMT",
+  "name": "Юля ",
+  "amount": 3.5,
+  "id": "27"
+ },
+ {
+  "date": "Fri, 28 Apr 2023 15:13:55 GMT",
+  "name": "Юля (паундленд)",
+  "amount": 6.99,
+  "id": "28"
+ },
+ {
+  "date": "Fri, 28 Apr 2023 15:14:07 GMT",
+  "name": "Юля",
+  "amount": 3.66,
+  "id": "29"
+ },
+ {
+  "date": "Fri, 28 Apr 2023 18:39:17 GMT",
+  "name": "Віка",
+  "amount": 81,
+  "id": "30"
+ },
+ {
+  "date": "Sun, 30 Apr 2023 16:04:56 GMT",
+  "name": "Юля (кавун)",
+  "amount": 3.19,
+  "id": "31"
+ },
+ {
+  "date": "Sun, 30 Apr 2023 16:05:09 GMT",
+  "name": "Юля",
+  "amount": 6.63,
+  "id": "32"
+ },
+ {
+  "date": "Sun, 30 Apr 2023 16:05:26 GMT",
+  "name": "Юля (гортензії)",
+  "amount": 12.58,
+  "id": "33"
+ },
+ {
+  "date": "Tue, 02 May 2023 17:49:58 GMT",
+  "name": "Даша ( Пасха суперсем)",
+  "amount": 20.48,
+  "id": "34"
+ },
+ {
+  "date": "Tue, 09 May 2023 17:59:28 GMT",
+  "name": "Саша",
+  "amount": 6.57,
+  "id": "35"
+ },
+ {
+  "date": "Tue, 09 May 2023 17:59:53 GMT",
+  "name": "Саша",
+  "amount": 23.78,
+  "id": "36"
+ },
+ {
+  "date": "Tue, 09 May 2023 18:00:09 GMT",
+  "name": "Саша",
+  "amount": 10.75,
+  "id": "37"
+ }
+]

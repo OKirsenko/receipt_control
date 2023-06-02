@@ -1,0 +1,164 @@
+[
+ {
+  "date": "Sun, 14 May 2023 12:11:54 GMT",
+  "name": "Віка",
+  "amount": 80.89,
+  "id": "1"
+ },
+ {
+  "date": "Sun, 14 May 2023 12:12:25 GMT",
+  "name": "Віка",
+  "amount": 13.32,
+  "id": "2"
+ },
+ {
+  "date": "Sun, 14 May 2023 12:12:43 GMT",
+  "name": "Віка",
+  "amount": 20.42,
+  "id": "3"
+ },
+ {
+  "date": "Tue, 16 May 2023 14:13:42 GMT",
+  "name": "Юля",
+  "amount": 7.27,
+  "id": "4"
+ },
+ {
+  "date": "Tue, 16 May 2023 14:14:06 GMT",
+  "name": "Юля ",
+  "amount": 2.94,
+  "id": "5"
+ },
+ {
+  "date": "Tue, 16 May 2023 14:14:14 GMT",
+  "name": "Юля",
+  "amount": 8.62,
+  "id": "6"
+ },
+ {
+  "date": "Tue, 16 May 2023 14:14:23 GMT",
+  "name": "Юля",
+  "amount": 22.86,
+  "id": "7"
+ },
+ {
+  "date": "Tue, 16 May 2023 14:14:35 GMT",
+  "name": "Юля",
+  "amount": 78.41,
+  "id": "8"
+ },
+ {
+  "date": "Wed, 17 May 2023 11:34:53 GMT",
+  "name": "Віка",
+  "amount": 18.44,
+  "id": "9"
+ },
+ {
+  "date": "Wed, 17 May 2023 11:36:46 GMT",
+  "name": "Віка",
+  "amount": 1.5,
+  "id": "10"
+ },
+ {
+  "date": "Thu, 18 May 2023 15:31:10 GMT",
+  "name": "Саша",
+  "amount": 9.11,
+  "id": "11"
+ },
+ {
+  "date": "Thu, 18 May 2023 15:31:33 GMT",
+  "name": "Саша (рамки і тд)",
+  "amount": 26.5,
+  "id": "12"
+ },
+ {
+  "date": "Thu, 18 May 2023 15:32:02 GMT",
+  "name": "Саша",
+  "amount": 54.7,
+  "id": "13"
+ },
+ {
+  "date": "Thu, 18 May 2023 15:32:54 GMT",
+  "name": "Саша",
+  "amount": 2.1,
+  "id": "14"
+ },
+ {
+  "date": "Fri, 19 May 2023 07:55:57 GMT",
+  "name": "Віка",
+  "amount": 3.3,
+  "id": "15"
+ },
+ {
+  "date": "Wed, 24 May 2023 16:38:16 GMT",
+  "name": "Саша",
+  "amount": 3.66,
+  "id": "16"
+ },
+ {
+  "date": "Wed, 24 May 2023 16:38:24 GMT",
+  "name": "Саша",
+  "amount": 4.85,
+  "id": "17"
+ },
+ {
+  "date": "Sat, 27 May 2023 11:37:34 GMT",
+  "name": "Віка",
+  "amount": 1.16,
+  "id": "18"
+ },
+ {
+  "date": "Sat, 27 May 2023 11:38:12 GMT",
+  "name": "Віка",
+  "amount": 2.94,
+  "id": "19"
+ },
+ {
+  "date": "Sat, 27 May 2023 15:47:12 GMT",
+  "name": "Юля (суперсем)",
+  "amount": 10.1,
+  "id": "20"
+ },
+ {
+  "date": "Sat, 27 May 2023 15:48:47 GMT",
+  "name": "Юля (закупи)",
+  "amount": 72.96,
+  "id": "21"
+ },
+ {
+  "date": "Mon, 29 May 2023 07:41:24 GMT",
+  "name": "Саша(кавоварка)",
+  "amount": 34.58,
+  "id": "22"
+ },
+ {
+  "date": "Wed, 31 May 2023 19:20:47 GMT",
+  "name": "Юля (боржомі/кавун)",
+  "amount": 10.1,
+  "id": "23"
+ },
+ {
+  "date": "Fri, 02 Jun 2023 19:31:26 GMT",
+  "name": "Даша",
+  "amount": 42.25,
+  "id": "24"
+ },
+ {
+  "date": "Fri, 02 Jun 2023 19:31:39 GMT",
+  "name": "Саша",
+  "amount": 107.85,
+  "id": "25"
+ },
+ {
+  "date": "Fri, 02 Jun 2023 19:33:05 GMT",
+  "name": "Саша(шейкер)",
+  "amount": 4.4,
+  "id": "26"
+ },
+ {
+  "date": "Fri, 02 Jun 2023 19:34:11 GMT",
+  "name": "Віка",
+  "amount": 10,
+  "id": "27"
+ }
+]

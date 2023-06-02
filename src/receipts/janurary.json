@@ -1,0 +1,147 @@
+[
+ {
+  "date": "Sat, 07 Jan 2023 19:58:42 GMT",
+  "name": "Саша",
+  "amount": 14.75,
+  "id": "6"
+ },
+ {
+  "date": "Wed, 11 Jan 2023 18:25:10 GMT",
+  "name": "Vika",
+  "amount": 1.5,
+  "id": "7"
+ },
+ {
+  "date": "Wed, 11 Jan 2023 18:26:39 GMT",
+  "name": "Vika",
+  "amount": 73.45,
+  "id": "8"
+ },
+ {
+  "date": "Wed, 11 Jan 2023 18:26:57 GMT",
+  "name": "Vika ",
+  "amount": 1.4,
+  "id": "9"
+ },
+ {
+  "date": "Wed, 11 Jan 2023 18:27:33 GMT",
+  "name": "Vika",
+  "amount": 11.64,
+  "id": "10"
+ },
+ {
+  "date": "Fri, 13 Jan 2023 00:41:05 GMT",
+  "name": "Юля",
+  "amount": 2,
+  "id": "11"
+ },
+ {
+  "date": "Fri, 13 Jan 2023 00:41:39 GMT",
+  "name": "Юля",
+  "amount": 8.6,
+  "id": "12"
+ },
+ {
+  "date": "Fri, 13 Jan 2023 00:42:27 GMT",
+  "name": "Юля",
+  "amount": 2.2,
+  "id": "13"
+ },
+ {
+  "date": "Fri, 13 Jan 2023 00:43:57 GMT",
+  "name": "Юля",
+  "amount": 3.43,
+  "id": "14"
+ },
+ {
+  "date": "Tue, 17 Jan 2023 15:02:16 GMT",
+  "name": "Саша",
+  "amount": 3.2,
+  "id": "15"
+ },
+ {
+  "date": "Wed, 18 Jan 2023 10:51:41 GMT",
+  "name": "Vika",
+  "amount": 9.34,
+  "id": "16"
+ },
+ {
+  "date": "Fri, 20 Jan 2023 11:54:19 GMT",
+  "name": "Vika",
+  "amount": 4.36,
+  "id": "17"
+ },
+ {
+  "date": "Sat, 21 Jan 2023 11:33:21 GMT",
+  "name": "Юля",
+  "amount": 95.12,
+  "id": "18"
+ },
+ {
+  "date": "Mon, 23 Jan 2023 10:55:06 GMT",
+  "name": "Юля",
+  "amount": 2.48,
+  "id": "19"
+ },
+ {
+  "date": "Mon, 23 Jan 2023 10:56:08 GMT",
+  "name": "Юля",
+  "amount": 2.59,
+  "id": "20"
+ },
+ {
+  "date": "Mon, 23 Jan 2023 10:56:49 GMT",
+  "name": "Юля",
+  "amount": 2.54,
+  "id": "21"
+ },
+ {
+  "date": "Mon, 23 Jan 2023 12:02:13 GMT",
+  "name": "Юля",
+  "amount": 7.66,
+  "id": "22"
+ },
+ {
+  "date": "Sun, 29 Jan 2023 16:43:06 GMT",
+  "name": "Саша",
+  "amount": 17.3,
+  "id": "23"
+ },
+ {
+  "date": "Sun, 29 Jan 2023 22:46:30 GMT",
+  "name": "Віка",
+  "amount": 6.5,
+  "id": "24"
+ },
+ {
+  "date": "Mon, 30 Jan 2023 20:41:57 GMT",
+  "name": "Юля",
+  "amount": 2.31,
+  "id": "25"
+ },
+ {
+  "date": "Tue, 31 Jan 2023 18:32:05 GMT",
+  "name": "Віка",
+  "amount": 6,
+  "id": "26"
+ },
+ {
+  "date": "Tue, 31 Jan 2023 18:32:05 GMT",
+  "name": "Віка",
+  "amount": 4.42,
+  "id": "27"
+ },
+ {
+  "date": "Tue, 31 Jan 2023 18:32:05 GMT",
+  "name": "Віка",
+  "amount": 2.74,
+  "id": "28"
+ },
+ {
+  "date": "Tue, 31 Jan 2023 18:32:05 GMT",
+  "name": "Віка",
+  "amount": 5.6,
+  "id": "29"
+ }
+
+]

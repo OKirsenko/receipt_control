@@ -1,0 +1,194 @@
+[
+ {
+  "date": "Tue, 14 Feb 2023 08:38:23 GMT",
+  "name": "Саша",
+  "amount": 2.66,
+  "id": "1"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:49:34 GMT",
+  "name": "Vika",
+  "amount": 55.85,
+  "id": "2"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:49:50 GMT",
+  "name": "Vika",
+  "amount": 57.46,
+  "id": "3"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:50:49 GMT",
+  "name": "Vika",
+  "amount": 3,
+  "id": "4"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:51:14 GMT",
+  "name": "Vika",
+  "amount": 1.5,
+  "id": "6"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:51:30 GMT",
+  "name": "Юля",
+  "amount": 25.25,
+  "id": "7"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:53:23 GMT",
+  "name": "Віка сільничка",
+  "amount": 6.28,
+  "id": "8"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:54:30 GMT",
+  "name": "Vika",
+  "amount": 13.66,
+  "id": "10"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:54:59 GMT",
+  "name": "Vika",
+  "amount": 5.53,
+  "id": "11"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:56:25 GMT",
+  "name": "Vika",
+  "amount": 15.16,
+  "id": "12"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 10:56:46 GMT",
+  "name": "Vika",
+  "amount": 25.55,
+  "id": "13"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 11:11:35 GMT",
+  "name": "Vika",
+  "amount": 3.85,
+  "id": "14"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 11:11:40 GMT",
+  "name": "Vika",
+  "amount": 3.8,
+  "id": "15"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 19:21:48 GMT",
+  "name": "Саша",
+  "amount": 7.62,
+  "id": "16"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 20:23:07 GMT",
+  "name": "Юля (Капуста, буряк, нектарин) дублюється з Вікою, але платила я",
+  "amount": 2.29,
+  "id": "17"
+ },
+ {
+  "date": "Thu, 16 Feb 2023 20:24:00 GMT",
+  "name": "Юля (13.02) неполєзна покупка",
+  "amount": 13.65,
+  "id": "18"
+ },
+ {
+  "date": "Sun, 19 Feb 2023 11:47:47 GMT",
+  "name": "Юля",
+  "amount": 3.39,
+  "id": "19"
+ },
+ {
+  "date": "Mon, 20 Feb 2023 19:58:18 GMT",
+  "name": "Віка (туалєтна бумага і всьо таке) прохання терти жопу економніше",
+  "amount": 22.5,
+  "id": "20"
+ },
+ {
+  "date": "Thu, 23 Feb 2023 21:02:35 GMT",
+  "name": "Віка",
+  "amount": 2.6,
+  "id": "23"
+ },
+ {
+  "date": "Fri, 24 Feb 2023 19:15:27 GMT",
+  "name": "Віка (закупи)",
+  "amount": 52.3,
+  "id": "24"
+ },
+ {
+  "date": "Fri, 24 Feb 2023 19:15:53 GMT",
+  "name": "Віка(пиво)",
+  "amount": 4.2,
+  "id": "25"
+ },
+ {
+  "date": "Thu, 02 Mar 2023 10:50:02 GMT",
+  "name": "Віка (вішалка в душ)",
+  "amount": 15,
+  "id": "26"
+ },
+ {
+  "date": "Thu, 02 Mar 2023 10:50:45 GMT",
+  "name": "Віка",
+  "amount": 1.5,
+  "id": "27"
+ },
+ {
+  "date": "Fri, 03 Mar 2023 01:04:17 GMT",
+  "name": "Віка ( березень)",
+  "amount": 7.6,
+  "id": "28"
+ },
+ {
+  "date": "Fri, 03 Mar 2023 14:57:03 GMT",
+  "name": "Юля (джин + фісташки в посилку)",
+  "amount": 21.79,
+  "id": "29"
+ },
+ {
+  "date": "Fri, 03 Mar 2023 15:01:19 GMT",
+  "name": "Юля (лютий) food warehouse ",
+  "amount": 34.85,
+  "id": "30"
+ },
+ {
+  "date": "Fri, 03 Mar 2023 15:03:44 GMT",
+  "name": "Юля (алді) лютий",
+  "amount": 4.96,
+  "id": "31"
+ },
+ {
+  "date": "Sat, 04 Mar 2023 14:13:33 GMT",
+  "name": "Віка (нові закупи на березень)",
+  "amount": 39,
+  "id": "32"
+ },
+ {
+  "date": "Mon, 06 Mar 2023 14:47:43 GMT",
+  "name": "Саша",
+  "amount": 7.5,
+  "id": "33"
+ },
+ {
+  "date": "Wed, 08 Mar 2023 17:04:43 GMT",
+  "name": "Віка",
+  "amount": 4.9,
+  "id": "34"
+ },
+ {
+  "date": "Wed, 08 Mar 2023 17:05:13 GMT",
+  "name": "Віка",
+  "amount": 3.8,
+  "id": "35"
+ },
+ {
+  "date": "Thu, 09 Mar 2023 20:33:34 GMT",
+  "name": "Юля (піца, сідр, плмідорки)",
+  "amount": 5.79,
+  "id": "36"
+ }
+]
