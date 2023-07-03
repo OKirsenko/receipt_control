@@ -14,11 +14,12 @@ function onFormSubmit(e) {
   e.preventDefault();
   const name = e.currentTarget.elements.name.value;
   const amount = +e.currentTarget.elements.amount.value;
+  const description = e.currentTarget.elements.description.value; // Отримайте значення опису з форми вводу або іншого джерела
   const date = getDate();
   if (amount >= 10) {
     audio.play();
   }
-  postReceipt(name, amount, date);
+  postReceipt(name, amount, description, date);
   e.currentTarget.reset();
 }
 
@@ -26,9 +27,15 @@ function getDate() {
   return new Date().toUTCString();
 }
 
-async function postReceipt(name, amount, date) {
+async function postReceipt(name, amount, description, date) {
+  // Оновлено функцію postReceipt
   try {
-    const id = await axios.post(`${baseUrl}${query}`, { name, amount, date });
+    const id = await axios.post(`${baseUrl}${query}`, {
+      name,
+      amount,
+      description,
+      date,
+    }); // Додано опис до POST-запиту
     getReceipt(baseUrl);
   } catch (error) {
     console.error(error);
@@ -57,7 +64,13 @@ function markupData(res) {
   const markup = reverseData
     .map(
       item =>
-        `<li id='${item.id}' class='receipt_item'><p class='rec_name'>${item.name}</p><p class='rec_amount'>${item.amount}</p><p class='rec_date'>${item.date}</p><button class='delete_btn'>Ой, бля</button></li>`
+        `<li id='${item.id}' class='receipt_item'>
+          <p class='rec_name'>${item.name}</p>
+          <p class='rec_amount'>${item.amount}</p>
+          <p class='rec_description'>${item.description}</p> <!-- Додано відображення опису -->
+          <p class='rec_date'>${item.date}</p>
+          <button class='delete_btn'>Ой, бля</button>
+        </li>`
     )
     .join('');
   list.innerHTML = markup;
