@@ -71,7 +71,7 @@ button {
         // background-color: aqua;
         margin-top: 30px;
     }
-    input {
+    input, select {
         width: 100%;
         margin-bottom: 15px;
         height: 40px;
@@ -83,6 +83,16 @@ button {
         padding: 10px 20px;
         font-weight: 300;
     }
+        .select_name {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px;
+            padding-right: 30px;
+        }
     .btn_wrap {
         display: flex;
         justify-content: space-around;
